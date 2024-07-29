@@ -4,3 +4,13 @@
 *{
   font-family: "Poppins", sans-serif;
 }
+
+.nav-link{
+  cursor: pointer;
+}
+
+.card img{
+  overflow: hidden;
+  height: 300px;
+  object-fit: cover;
+}
