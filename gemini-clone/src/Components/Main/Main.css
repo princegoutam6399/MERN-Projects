@@ -1,0 +1,73 @@
+.main{
+    display: flex;
+    min-height: 100vh;
+    flex: 1;
+    padding-bottom: 15vh;
+    margin-left: 100px;
+    position: relative;
+}
+
+.main .main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    width: 92vw;
+    height: 90px;
+    padding: 20px;
+    color: #585858;
+}
+
+
+.main-container{
+
+    max-width: 900px;
+    margin: 60px 0 0 200px;
+}
+.main .greet{
+    margin: 40px 0px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+    font-size: 56px;
+    float: none;
+}
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+}
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 27px;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.main .card p{
+    color: #585858;
+    font-size: 17px;
+
+}
+.main .card:hover{
+    background-color: #dfe4ea;
+}
