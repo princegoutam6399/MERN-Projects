@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../../assets/assets'
+import { Context } from '../../Context/Context';
 
 const Sidebar = () => {
 
     const [collapse, setCollapse] = useState(false);
+    const { onSent, prevPrompts, setRecentPrompt,newChat } = useContext(Context);
+
+    const loadPrompt = async (prompt)=>{
+        setRecentPrompt(prompt)
+    }
 
     return (
         <div className='sidebar-data position-fixed'>
@@ -13,19 +19,25 @@ const Sidebar = () => {
                         <img onClick={() => setCollapse(prev => !prev)} src={assets.menu_icon} alt="" style={{ width: "25px" }} />
                     </div>
                     <div class="nav flex-column pt-4">
-                        <div className="new-chat d-flex">
-                            <img src={assets.plus_icon}  style={{ width: "20px",height:"30px" }}/>
+                        <div onClick={()=>newChat()} className="new-chat d-flex">
+                            <img src={assets.plus_icon} style={{ width: "20px", height: "30px" }} />
                             {collapse ? <p className='ms-2 mt-1'>New Chat</p> : null}
                         </div>
                         {collapse ?
                             <div className="recent mb-2">
                                 <p class="nav-item pt-1">Recent</p>
-                                <a href="#" class="nav-item mb-3 text-decoration-none text-dark"><img src={assets.message_icon} style={{ width: "25px" }} /> Youtube Music Limitations</a>
+                                {prevPrompts.map((item, index) => {
+                                    return (
+                                        <div onClick={()=>loadPrompt(item)} className="recent-entry">
+                                            <a href="#" class="nav-item mb-3 text-decoration-none text-dark"><img src={assets.message_icon} style={{ width: "25px" }} /> {item.slice(0,19)}...</a>
+                                        </div>
+                                    )
+                                })}
                             </div>
                             : null}
                     </div>
                 </div>
-                
+
                 <div className="bottom">
                     <div className="bottom-item d-flex mb-1">
                         <a href="/" class="nav-item text-decoration-none me-2 text-dark"><i class="fas fa-question-circle"></i> </a>
@@ -41,10 +53,6 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-            {/* <div class="footer mt-3" style={{ fontSize: "13px" }}>
-                    <p>Uttar Pradesh, India</p>
-                    <a href="/" className='text-decoration-none'>From your IP address • Update location</a>
-                </div> */}
         </div>
     )
 }
