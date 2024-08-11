@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 const Navbar = () => {
+
+
     return (
         <div>
             <div className="container-fluid navbar-cont">

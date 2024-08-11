@@ -9,8 +9,15 @@
   cursor: pointer;
 }
 
+
 .card img{
   overflow: hidden;
   height: 300px;
   object-fit: cover;
+}
+
+.nav-link.active {
+  background-color: green;
+  font-weight: bold;
+  border-radius: 5px;
 }

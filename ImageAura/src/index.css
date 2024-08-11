@@ -33,15 +33,35 @@
 }
 
 
-/* Item  */
-
-.items .item{
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  grid-template-rows: masonry;
-}
-.item img{
-  width:300px;
+img{
+  max-width: 100%;
   height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.items .item>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.items{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(autofit,minmax(250px,1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.items .wide{
+  grid-column: span 2;
+}
+.items .tall{
+  grid-row: span 2;
+}
+.items .big{
+  grid-column:span 2;
+  grid-row: span 2;
 }

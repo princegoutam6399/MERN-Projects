@@ -10,12 +10,15 @@ import {
     HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const apiKey = "AIzaSyDIe2IPR824cxe9w3mDZ9m2Uvut18CnS8s";
+
+const apiKey ='AIzaSyDIe2IPR824cxe9w3mDZ9m2Uvut18CnS8s';
 const genAI = new GoogleGenerativeAI(apiKey);
+
 
 const model = genAI.getGenerativeModel({
     model: "gemini-1.5-flash",
 });
+
 
 const generationConfig = {
     temperature: 1,
@@ -26,14 +29,19 @@ const generationConfig = {
 };
 
 async function runChat(prompt) {
-    const chatSession = model.startChat({
-        generationConfig,
-        history: [],
-    });
+    try {
+        const chatSession = model.startChat({
+            generationConfig,
+            history: [],
+        });
 
-    const result = await chatSession.sendMessage(prompt);
-    console.log(result.response.text);
-    return result.response.text;
+        const result = await chatSession.sendMessage(prompt);
+        console.log(result.response.text);
+        return result.response.text;
+    } catch (error) {
+        console.error("Error during chat session:", error);
+        throw error;
+    }
 }
 
 export default runChat;

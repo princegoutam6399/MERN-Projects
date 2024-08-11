@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import runChat from "../Config/gemini";
 
+
 export const Context = createContext();
 
 const ContextProvider = (props) => {
@@ -79,4 +80,4 @@ const ContextProvider = (props) => {
     );
 };
 
-export default ContextProvider;
+export default ContextProvider
