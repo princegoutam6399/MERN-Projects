@@ -1,13 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faMobile } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
-    return (
-        <div>
-            <Navbar/>
-            <div className="main">
+  return (
+    <div>
+        <div className="main">
                 <div className="container-fluid pt-5">
                     <div className="row justify-content-center pt-5">
                         <div className="col-lg-6">
@@ -26,7 +22,7 @@ const Contact = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-3">
                                 <div className="info-item">
-                                    <FontAwesomeIcon icon={faLocationDot} className='fs-3 text-success ms-auto' /><br></br>
+                                <i class="fa-solid fa-location-dot fs-3 text-success ms-auto"></i><br></br>
                                     <div>
                                         <h2>Location:</h2>
                                         <p>A108 Adam Street, New York, NY 535022</p>
@@ -35,7 +31,7 @@ const Contact = () => {
                             </div>
                             <div className="col-lg-3">
                                 <div className="info-item">
-                                    <FontAwesomeIcon icon={faEnvelope} className='fs-3 text-success ms-auto' /><br></br>
+                                <i class="fa-solid fa-envelope fs-3 text-success ms-auto"></i><br></br>
                                     <div>
                                         <h2>E-mail:</h2>
                                         <p>info@example.com</p>
@@ -44,7 +40,7 @@ const Contact = () => {
                             </div>
                             <div className="col-lg-3">
                                 <div className="info-item">
-                                    <FontAwesomeIcon icon={faMobile} className='fs-3 text-success ms-auto' /><br></br>
+                                <i class="fa-solid fa-mobile fs-3 text-success ms-auto"></i><br></br>
                                     <div>
                                         <h2>Call:</h2>
                                         <p>+1 5589 55488 55</p>
@@ -57,27 +53,27 @@ const Contact = () => {
                                 <form action="update" method="POST">
                                     <div className="mb-3">
                                         <label for="exampleFormControlInput1" className="form-label">Your Name</label>
-                                        <input type="text" name="name" className="form-control" id="exampleFormControlInput1"
+                                        <input type="text" name="name" className="border-success form-control" id="exampleFormControlInput1"
                                             placeholder="name"></input>
                                     </div>
                                     <div className="mb-3">
                                         <label for="exampleFormControlInput1" className="form-label">Email address</label>
-                                        <input type="email" name="email" className="form-control" id="exampleFormControlInput1"
+                                        <input type="email" name="email" className="border-success form-control" id="exampleFormControlInput1"
                                             placeholder="name@example.com"></input>
                                     </div>
                                     <div className="mb-3">
                                         <label for="exampleFormControlInput1" className="form-label">Subject</label>
-                                        <input type="text" name="subject" className="form-control" id="exampleFormControlInput1"
+                                        <input type="text" name="subject" className="border-success form-control" id="exampleFormControlInput1"
                                             placeholder="subject"></input>
                                     </div>
                                     <div className="mb-3">
                                         <label for="exampleFormControlTextarea1" name="message"
                                             className="form-label">Message</label>
-                                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        <textarea className="form-control border-success" id="exampleFormControlTextarea1" rows="3"
                                             placeholder="write an some text"></textarea>
                                         <div className="text justify-content-center mt-4 text-center">
                                             <button type="submit"
-                                                className="btn p-2 text-white bg-success w-auto text-decoration-none">Send
+                                                className="btn ps-3 pe-3 text-white bg-success w-auto text-decoration-none">Send
                                                 Message</button>
                                         </div>
                                     </div>
@@ -87,8 +83,8 @@ const Contact = () => {
                     </div>
                 </section>
             </div>
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Contact

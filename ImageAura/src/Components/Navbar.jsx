@@ -49,7 +49,7 @@ const Navbar = () => {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div className="collapse navbar-collapse " id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">License</a>
@@ -64,12 +64,12 @@ const Navbar = () => {
                         </div>
                     </div>
                 </nav>
-                <div className="search-container">
+                <div className="search-containe">
                     <div className="container form-cont">
                         <h2 className='text-center'>The best free stock photos, royalty free <br /> images & videos shared by creators.</h2>
                         <form className="d-flex pt-2" role="search" onSubmit={getData}>
-                            <input className="form-control me-2" type="search" placeholder="Search for free photos" aria-label="Search" style={{ height: "50px", fontSize: "18px" }} onChange={handleSearch} />
-                            <button className="btn btn-outline-dark" type="submit" style={{ height: "48px", width: "100px", fontSize: "18px" }}>Search</button>
+                            <input className="form-control flex-1 me-2" type="search" placeholder="Search for free photos" aria-label="Search" onChange={handleSearch} />
+                            <button className="btn btn-success " type="submit" >Search</button>
                         </form>
                     </div>
                 </div>

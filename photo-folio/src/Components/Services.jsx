@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
 
 const Services = () => {
     return (
-        <div className=''>
-            <Navbar/>
+        <div>
             <section className="services pt-5">
                 <div className="container-fluid pt-5">
                     <div className="row justify-content-center">
@@ -15,7 +13,7 @@ const Services = () => {
                                     consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
                                     ratione
                                     sint. Sit quaerat ipsum dolorem.</p>
-                                    <a><button className="btn pe-4 ps-4 text-center text-white mt-4 w-auto bg-success text-decoration-none">AVAILABLE
+                                <a><button className="btn pe-4 ps-4 text-center text-white mt-4 w-auto bg-success text-decoration-none">AVAILABLE
                                     FOR HIRE</button></a>
                             </div>
                         </div>
@@ -27,26 +25,26 @@ const Services = () => {
             <section className="services-part pt-5">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-xl-3 col-md-6">
-                            <div className="services-item p-5 bg-success">
+                        <div className="col-xl-3 col-md-6 ">
+                            <div className="services-item rounded p-5 bg-success">
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6">
-                            <div className="services-item p-5 bg-success">
+                        <div className="col-xl-3 col-md-6 ">
+                            <div className="services-item rounded p-5 bg-success">
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6">
-                            <div className="services-item p-5 bg-success">
+                        <div className="col-xl-3 col-md-6 ">
+                            <div className="services-item rounded p-5 bg-success">
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6">
-                            <div className="services-item p-5 bg-success">
+                        <div className="col-xl-3 col-md-6 ">
+                            <div className="services-item rounded p-5 bg-success">
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>

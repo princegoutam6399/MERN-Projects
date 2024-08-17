@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
 
 const About = () => {
-    return (
-        <div>
-            <Navbar/>
-            <div className="">
+  return (
+    <div>
+        <div className="">
                 <div className="container-fluid pt-5">
                     <div className="row justify-content-center pt-5">
                         <div className="col-lg-6">
@@ -83,8 +81,8 @@ const About = () => {
                     </div >
                 </div >
             </div>
-        </div>
-    )
+    </div>
+  )
 }
 
 export default About
