@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
     return (
@@ -13,8 +14,9 @@ const Services = () => {
                                     consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
                                     ratione
                                     sint. Sit quaerat ipsum dolorem.</p>
-                                <a><button className="btn pe-4 ps-4 text-center text-white mt-4 w-auto bg-success text-decoration-none">AVAILABLE
-                                    FOR HIRE</button></a>
+                                <Link to='/contact'><button className="btn pe-4 ps-4 text-center text-white mt-4 w-auto bg-success text-decoration-none">AVAILABLE
+                                    FOR HIRE</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -26,25 +28,25 @@ const Services = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-3 col-md-6 ">
-                            <div className="services-item rounded p-5 bg-success">
+                            <div className="services-item rounded p-5 mb-2" style={{ backgroundColor: "#27A776" }}>
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 ">
-                            <div className="services-item rounded p-5 bg-success">
+                            <div className="services-item rounded p-5 mb-2" style={{ backgroundColor: "#27A776" }}>
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 ">
-                            <div className="services-item rounded p-5 bg-success">
+                            <div className="services-item rounded p-5 mb-2" style={{ backgroundColor: "#27A776" }}>
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
                         </div>
                         <div className="col-xl-3 col-md-6 ">
-                            <div className="services-item rounded p-5 bg-success">
+                            <div className="services-item rounded p-5 mb-2" style={{ backgroundColor: "#27A776" }}>
                                 <h4>Lorem, ipsum.</h4>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, porro.</p>
                             </div>
