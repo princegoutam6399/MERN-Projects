@@ -8,6 +8,7 @@ import Contact from './Components/Contact';
 import Gallery from './Components/Gallery';
 import About from './Components/About';
 import Services from './Components/Services';
+import Preview from './Components/Preview';
 
 const NotFound = () => <h2>Page Not Found</h2>;
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/preview' element={<Preview />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Suspense>

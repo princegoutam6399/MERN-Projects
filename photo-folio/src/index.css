@@ -8,3 +8,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon a {
+  color: white;
+}
+
+.icon a:hover {
+  color: #27A776;
+  transition: 0.5s;
+}
+
+
+.gallery-item img {
+  transition: 0.5s;
+}
+
+.gallery-item img:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+

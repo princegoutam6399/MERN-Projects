@@ -31,12 +31,12 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <div className="icon ms-auto">
-                            <a href=""><i className="fab fa-facebook fs-5 text-white ms-2"></i>
+                            <a href=""><i className="fab fa-facebook fs-5 ms-2"></i>
                             </a>
-                            <a href=""><i className="fab fa-instagram fs-5 text-white ms-2"></i></a>
-                            <a href=""><i className="fab fa-twitter fs-5 text-white ms-2"></i>
+                            <a href=""><i className="fab fa-instagram fs-5 ms-2"></i></a>
+                            <a href=""><i className="fab fa-twitter fs-5 ms-2"></i>
                             </a>
-                            <a href=""><i className="fab fa-linkedin fs-5 text-white ms-2"></i>
+                            <a href=""><i className="fab fa-linkedin fs-5 ms-2"></i>
                             </a>
                         </div>
                     </div>
