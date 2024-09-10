@@ -9,12 +9,12 @@ const Footer = () => {
           <div class="footer-text text-center p-2">
             <p>© Copyright <span>PhotoFolio</span>. All Rights Reserved</p>
             <div className="icon ms-auto">
-              <a href=""><i className="fab fa-facebook rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
+              <a href="https://www.facebook.com/"><i className="fab fa-facebook rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
               </a>
-              <a href=""><i className="fab fa-instagram rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i></a>
-              <a href=""><i className="fab fa-twitter rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
+              <a href="https://www.instagram.com/"><i className="fab fa-instagram rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i></a>
+              <a href="https://www.twitter.com/"><i className="fab fa-twitter rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
               </a>
-              <a href=""><i className="fab fa-linkedin rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
+              <a href="https://www.linkedin.com/"><i className="fab fa-linkedin rounded-circle bg-dark border border-white p-2 fs-5 text-white ms-2"></i>
               </a>
             </div>
             <div className="made mt-2">
